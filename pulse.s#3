@@ -4979,9 +4979,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY6" library="supply2" deviceset="VCC" device="" value="3v3"/>
 </parts>
 <sheets>
 <sheet>
@@ -5010,21 +5007,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND4" gate="1" x="109.22" y="35.56"/>
 <instance part="GND5" gate="1" x="149.86" y="43.18"/>
 <instance part="GND6" gate="1" x="157.48" y="43.18"/>
-<instance part="SUPPLY1" gate="G$1" x="137.16" y="73.66"/>
-<instance part="SUPPLY2" gate="G$1" x="144.78" y="73.66"/>
-<instance part="SUPPLY3" gate="G$1" x="152.4" y="73.66"/>
-<instance part="SUPPLY4" gate="G$1" x="152.4" y="66.04"/>
-<instance part="SUPPLY5" gate="G$1" x="144.78" y="66.04"/>
-<instance part="SUPPLY6" gate="G$1" x="109.22" y="73.66"/>
+<instance part="SUPPLY1" gate="G$1" x="142.24" y="83.82"/>
+<instance part="SUPPLY2" gate="G$1" x="154.94" y="83.82"/>
+<instance part="SUPPLY3" gate="G$1" x="167.64" y="83.82"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
-<segment>
-<wire x1="93.98" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -5089,7 +5078,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="109.22" y1="38.1" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S1"/>
 <wire x1="99.06" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
@@ -5101,8 +5090,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="73.66" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="66.04" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <junction x="109.22" y="53.34"/>
-<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<wire x1="109.22" y1="66.04" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="66.04" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <junction x="109.22" y="66.04"/>
 </segment>
 </net>
