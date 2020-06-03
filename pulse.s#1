@@ -5732,6 +5732,7 @@ D = Direct mounting &lt;p&gt;
 <part name="R12" library="adafruit" deviceset="R-US_" device="M0805"/>
 <part name="R13" library="adafruit" deviceset="R-US_" device="M0805"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5982,6 +5983,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="GND1" gate="1" x="38.1" y="91.44"/>
 <instance part="GND2" gate="1" x="91.44" y="63.5"/>
 <instance part="GND3" gate="1" x="12.7" y="76.2"/>
+<instance part="GND7" gate="1" x="40.64" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -6057,6 +6059,11 @@ D = Direct mounting &lt;p&gt;
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="66.04" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="P" pin="V-"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="48.26" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
